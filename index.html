@@ -10,7 +10,7 @@
     <body>
         <header>
             <h1>story setting</h1>
-            <p>This is the diary of a velociraptor named <span style="color:yellowgreen">
+            <p>This is the translated diary of a velociraptor named <span style="color:yellowgreen">
             <b>Bidey Gonsuun</b></span> during his <strong>last</strong> days on earth</p>
             <img src="https://www.nickgowman.com/wp-content/uploads/cartoon-raptor.png" alt="Girl in a jacket" width="150" height="120">
         </header>
@@ -94,11 +94,56 @@
 
         <section>
             If there are additional entries found they can be added with the following form below.
-            <form action="/action_page.html">
-                <label for="date">date:</label>
-                <input type="text" id="date" name="date"><br><br>
-                <label for="lname">Last name:</label>
-                <input type="text" id="lname" name="lname"><br><br>
+            <form action="/entry_page.html">
+                <label for="date">date discovered:</label>
+                <input type="date" id="date" name="date"><br><br>
+                <fieldset>
+                <label for="tfname">translator's first name:</label>
+                <input type="text" id="tfname" name="tfname"><br>
+                <label for="tlname">translator's last name :</label>
+                <input type="text" id="tlname" name="tlname"><br>
+                </fieldset>
+
+                <fieldset>
+                <label for="tfname">author's first name:</label>
+                <input type="text" id="afname" name="afname"><br>
+                <label for="tlname">author's last name :</label>
+                <input type="text" id="alname" name="alname"><br>                
+                </fieldset>
+                <fieldset>
+                    <h2>habitat</h2>
+                        <input type="checkbox" id="area1" name="forest">
+                        <label for="area1"> forest</label><br>
+                        <input type="checkbox" id="area2" name="grassy plain" >
+                        <label for="area2"> grassy plain</label><br>
+                        <input type="checkbox" id="area3" name="desert">
+                        <label for="area3"> desert</label><br>
+                    <p>gender of the Dinosaur:</p>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label><br>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label><br>
+                        <label for="cars">Choose its age group:</label>
+                    <select id="age">
+                        <option value="child">0-1</option>
+                        <option value="adolescent">2-5</option>
+                        <option value="adult">5-10</option>
+                        <option value="elder">10+</option>
+                    </select>
+                    <br>
+                    <label for="type">type of consumer :</label>
+                    <input list="types" name="type" id="type">
+                    <datalist id="types">
+                        <option value="herbivore">
+                        <option value="carnivore">
+                        <option value="omnivore">
+                    </datalist>
+                </fieldset>
+                <fieldset>
+                    <label for="w3review">Diary Entry:</label><br>
+                    <textarea id="w3review" name="w3review" rows="4" cols="50">
+                    </textarea>
+                </fieldset>
                 <input type="submit" value="Submit">
               </form>
         </section>
