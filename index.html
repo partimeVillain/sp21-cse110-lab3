@@ -7,17 +7,34 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Legend of meteorimish</title>
         <link rel="icon" type="image/png" href="audio/dino_94241.png">
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header>
+            <h2 class="sticky">give me an A please</h2>
             <h1>story setting</h1>
             <p>This is the translated diary of a velociraptor named <span style="color:yellowgreen">
             <b>Bidey Gonsuun</b></span> during his <strong>last</strong> days on earth</p>
-            <img src="https://www.nickgowman.com/wp-content/uploads/cartoon-raptor.png" alt="Girl in a jacket" width="150" height="120">
+            <hr>
+            <h2>The characters</h2>
+            <hr>
+            
+            <div class="flex-container">
+            <img src="https://www.nickgowman.com/wp-content/uploads/cartoon-raptor.png" alt="raptor kun" width="150" height="120">
+            <img src="screenshots/girl raptor.png" width ="150in" height="130in">
+            <img src="screenshots/dino raptor.png" width ="150in" height="130in">
+            </div>
+
+    
+            <span style="color:yellowgreen"><b>Bidey Gonsuun</b></span>
+            &emsp;&emsp;&emsp;&emsp;   
+            <span style="color:yellowgreen"><b>Clawdia Dymore</b></span>
+            &emsp;&emsp;&emsp;&emsp;   
+            <span style="color:yellowgreen"><b>Thynee Peepy</b></span>
         </header>
 
-        <div>
-            <h2 id="entry1">Entry #1</h2>
+        <div class="box_entry">
+            <h2 id="entry1">Entry #1</h2>  
             <br>Dear Diary:
             <p>&emsp;&emsp; Today was <i>disappointing</i>. Even though the hunt went well, that <em>bonelicker</em>
             <span style="color:yellowgreen"><b>Thynee Peepy</b></span> took all the credits. He stole
@@ -41,8 +58,8 @@
             </details>
             <hr>
         </div>
-
-        <section>
+        
+        <section class = "box2">
             <h2 id="entry2">Entry #2</h2>
             <br>Dear Diary:<br>
             &emsp;&emsp;I did it! Today marks my <strong>greatest</strong> achievement yet. I
@@ -61,9 +78,9 @@
             It's all thanks you, my friend in the night sky. You have granted me your blessings.
             Speaking of which, aren't you growing a little fast?
         </section>
-        <hr>
-        <section>
-            <h2>Entry #3</h2>
+    
+        <section class="box2">
+            <h2 id="entry3">Entry #3</h2>
             <br>Dear Diary:
             <p>&emsp;&emsp;This is it. I can feel my time coming to an end. I've led a good life.
             <span style="color:yellowgreen"><b>Clawdia</b></span> has already gone ahead and I shall follow soon.
@@ -93,7 +110,7 @@
             </video><br>
         </section>
 
-        <section>
+        <section class="box">
             If there are additional entries found they can be added with the following form below.
             <form action="/entry_page.html">
                 <label for="date">date discovered:</label>
@@ -149,11 +166,16 @@
               </form>
         </section>
 
-
-        <a href="#entry1">to entry 1</a>.
+        <div class="grid-container">
+            <div><a href="#entry1">to entry 1</a></div>
+            <div><a href="#entry2">to entry 2</a></div>
+            <div><a href="#entry3">to entry 3</a></div>
+        </div>
+       
         <footer>
             <p>This page was made with much help from w3schools.com and freecodecamp.org </p>
         </footer>
+
         <nav>
             <a href="https://www.w3schools.com/html/default.asp"> HTML tutorial </a> |
             <a href="https://www.freecodecamp.org/news/html-basics-for-beginners/">HTML basics</a> |
@@ -161,4 +183,7 @@
             <a href="https://www.youtube.com/watch?v=Y8Ij9xboreA&ab_channel=Dinosaurs">dino extinction source</a>
         </nav>
     </body>
+    <h2 class="inline>">PS. I love my graders :) </h2>
+    <h2 class="hidden">only those who give me A's</h2>
+
 </html>

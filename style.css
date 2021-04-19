@@ -1,0 +1,138 @@
+body {
+    background-color: rgb(65, 70, 41);
+  }
+  
+  h1 {
+    color: rgba(14, 228, 243, 0.993);   
+    text-align:center;
+  }
+
+  h2{
+    color: rgba(189, 25, 153, 0.993);   
+    text-align:center;
+  }
+
+  html {
+    font-size: 100%;
+  }
+  
+  .ems li {
+    font-size: 2em;
+  }
+  
+  .rems li {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.1em;
+  }
+
+.box{
+    background-color: rgb(65, 70, 41);
+    width: auto;
+    height: auto;
+    max-width: 500;
+    max-height: 532;
+    border: 15px solid rgb(154, 165, 51);
+    padding: 50px;
+    margin: auto;
+    position: static;
+  }
+
+
+ 
+  .box_entry{
+   
+    font-family: dance;
+    background-color: rgb(65, 70, 41);
+    width: 500px;
+    border-radius: 50;
+    border: 5px dashed rgb(16, 81, 221);
+    padding: 5px 10px 15px 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    color: aqua;
+    text-decoration-style: wavy;
+  }
+
+  .box2{
+    /* 3rd party font */
+    font-family: dance;
+    background-color: rgb(65, 70, 41);
+    width: 530px;
+    border: 5px groove rgb(197, 87, 14);
+    padding-top: 5;
+    padding-left: 5;
+    padding-bottom: 5;
+    padding-right: 5;
+    margin: 1 2 3 4;
+    color: aqua
+  }
+  
+  h2.hidden{
+      display:none;
+  }
+  h2.inline{
+      display: inline;
+      color:aqua;
+  }
+
+  h2.sticky{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 30px;
+    right: 30px;
+    border: 3px solid #2152ad;
+    width: 200px;;
+    text-align:left;
+  }
+
+a:hover {
+    color: hotpink;
+  }
+  
+  a:active {
+    color: rgb(255, 30, 0);
+  }
+
+  .flex-container {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(70, 52, 41);
+  }
+  
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+  }
+
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+
+  @media  (min-width: 500px) {
+    p{
+     font-size: 1.25rem;
+    }
+  }
+
+  @media  (min-width: 800px) {
+    p{
+     font-size: 1.5rem;
+    }
+  }
+
+  @font-face {
+      font-family: dance;
+      src: url(font/Dancing_Script/DancingScript-VariableFont_wght.ttf);
+  }
